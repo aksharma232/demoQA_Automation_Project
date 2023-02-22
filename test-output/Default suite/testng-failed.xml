@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.Automation_Project.demoQA.tc1_Fill_Pratice_Form">
+      <class name="org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form">
         <methods>
-          <include name="fill_Pratice_Form"/>
           <include name="launchBrowser"/>
+          <include name="fill_Pratice_Form"/>
+          <include name="closedBrowser"/>
         </methods>
-      </class> <!-- org.Automation_Project.demoQA.tc1_Fill_Pratice_Form -->
+      </class> <!-- org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
