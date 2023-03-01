@@ -24,6 +24,6 @@ public class tc1_Fill_Pratice_Form extends demoQA_BaseClass
 	  {
 		  Assert.assertTrue(false);
 	  }
-	 fp.close_Button_AfterSubmitbmit().click();
+	 //fp.close_Button_AfterSubmitbmit().click();
   }
 }
