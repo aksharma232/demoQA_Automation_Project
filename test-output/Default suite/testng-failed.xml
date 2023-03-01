@@ -6,7 +6,7 @@
       <class name="org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form">
         <methods>
           <include name="launchBrowser"/>
-          <include name="fill_Pratice_Form"/>
+          <include name="fill_Pratice_Form" invocation-numbers="0"/>
           <include name="closedBrowser"/>
         </methods>
       </class> <!-- org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form -->

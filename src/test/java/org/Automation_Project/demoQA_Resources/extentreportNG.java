@@ -3,7 +3,7 @@ package org.Automation_Project.demoQA_Resources;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ExtentreportNG 
+public class extentreportNG 
 {
 
 	public ExtentReports extentTestNGReport()
