@@ -12,7 +12,7 @@ public class listeners implements ITestListener
 {
 	ExtentTest test;
 	
-	ExtentreportNG extest = new ExtentreportNG();
+	extentreportNG extest = new extentreportNG();
 	
 	ExtentReports exreport = extest.extentTestNGReport();
 	

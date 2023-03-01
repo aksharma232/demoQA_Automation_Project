@@ -30,7 +30,7 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	@FindBy(xpath = "//div[contains(@class,'header-text')][normalize-space()='Forms']")
 	private WebElement openForms;
 	
-	@FindBy(xpath = "//span[normalize-space()='Practice Form']")
+	@FindBy(xpath = "//span[normalize-space()='Practice Form']")	
 	private WebElement practiceForm;
 	
 	@FindBy(id = "firstName")
@@ -91,7 +91,7 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	
 	public void fill_PraticeForm_Details(String student_FN,String student_LN, String student_EmailID,String student_Gender, String student_MobileNumber,String student_Subject, String student_Hobby, String student_Address, String student_State, String student_City) throws Throwable
 	{
-		openForms.click();
+		//openForms.click();
 		practiceForm.click();
 		firstName.sendKeys(student_FN);
 		lastName.sendKeys(student_LN);
@@ -223,6 +223,7 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 				if(stateList.get(i).getText().equalsIgnoreCase(student_State))
 					{
 						stateList.get(i).click();
+						System.out.println(stateList.get(i).getText());
 						e = d.findElement(By.xpath("//div[@class =\" css-1uccc91-singleValue\"]")).isDisplayed(); 
 						//e = stateList.get(i).isDisplayed();
 					}
@@ -248,6 +249,7 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 				if(cityList.get(i).getText().equalsIgnoreCase(student_City))
 					{
 						cityList.get(i).click();
+						System.out.println(cityList.get(i).getText());
 						s = d.findElement(By.xpath("//div[@class =\" css-1uccc91-singleValue\"]")).isDisplayed();
 					}
 			}
