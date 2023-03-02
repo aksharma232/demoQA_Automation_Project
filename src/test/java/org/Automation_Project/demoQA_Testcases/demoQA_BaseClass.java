@@ -7,7 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -19,7 +23,7 @@ public class demoQA_BaseClass {
   
 	public WebDriver d;
 
-@BeforeClass
+@BeforeMethod
   public void launchBrowser() throws Throwable 
   {
 	  WebDriverManager.chromedriver().setup();
@@ -36,10 +40,11 @@ public class demoQA_BaseClass {
 		return mp;
 	}
 
-@AfterClass
-public void closedBrowser()
+@AfterMethod
+public void closedBrowser() throws InterruptedException
 {
-	//d.close();
+	Thread.sleep(2000);
+	d.close();
 }
 
 }

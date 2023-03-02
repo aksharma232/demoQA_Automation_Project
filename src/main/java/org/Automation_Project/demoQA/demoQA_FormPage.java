@@ -72,8 +72,8 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	@FindBy(xpath = "//div[contains(text(),'Select State')]")
 	private WebElement state;
 	
-	//@FindBy(xpath = "//div[@class =\" css-11unzgr\"]//div")
-	@FindBy(xpath = "//div[@class = \" css-1i1mafy\"]/div")
+	@FindBy(xpath = "//div[@class =\" css-11unzgr\"]//div")
+	//@FindBy(xpath = "//div[@class = \" css-1i1mafy\"]/div")
 	private List<WebElement> stateList;
 	
 	
@@ -218,12 +218,14 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	{
 		boolean e = false;
 		state.click();
+		Thread.sleep(2000);
 		for(int i =0;i< stateList.size();i++)
 			{
+				System.out.println(stateList.get(i).getText());
 				if(stateList.get(i).getText().equalsIgnoreCase(student_State))
 					{
 						stateList.get(i).click();
-						System.out.println(stateList.get(i).getText());
+						//System.out.println(stateList.get(i).getText());
 						e = d.findElement(By.xpath("//div[@class =\" css-1uccc91-singleValue\"]")).isDisplayed(); 
 						//e = stateList.get(i).isDisplayed();
 					}
@@ -249,7 +251,7 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 				if(cityList.get(i).getText().equalsIgnoreCase(student_City))
 					{
 						cityList.get(i).click();
-						System.out.println(cityList.get(i).getText());
+						//System.out.println(cityList.get(i).getText());
 						s = d.findElement(By.xpath("//div[@class =\" css-1uccc91-singleValue\"]")).isDisplayed();
 					}
 			}
