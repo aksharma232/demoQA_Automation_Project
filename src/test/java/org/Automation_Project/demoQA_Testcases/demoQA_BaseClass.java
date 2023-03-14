@@ -3,6 +3,9 @@ package org.Automation_Project.demoQA_Testcases;
 import java.io.IOException;
 
 import org.Automation_Project.demoQA.demoQA_MainPage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,7 +26,7 @@ public class demoQA_BaseClass {
   
 	public WebDriver d;
 
-@BeforeMethod
+	@BeforeMethod
   public void launchBrowser() throws Throwable 
   {
 	  WebDriverManager.chromedriver().setup();
@@ -43,8 +46,7 @@ public class demoQA_BaseClass {
 @AfterMethod
 public void closedBrowser() throws InterruptedException
 {
-	Thread.sleep(2000);
-	d.close();
+		d.close();
 }
 
 }

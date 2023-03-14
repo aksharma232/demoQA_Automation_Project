@@ -1,26 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-02T15:03:39 IST" name="Default suite" finished-at="2023-03-02T15:03:39 IST" duration-ms="523">
+  <suite started-at="2023-03-14T21:04:47 IST" name="Default suite" finished-at="2023-03-14T21:05:39 IST" duration-ms="52804">
     <groups>
     </groups>
-    <test started-at="2023-03-02T15:03:39 IST" name="Default test" finished-at="2023-03-02T15:03:39 IST" duration-ms="523">
+    <test started-at="2023-03-14T21:04:47 IST" name="Default test" finished-at="2023-03-14T21:05:39 IST" duration-ms="52804">
       <class name="org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form">
-        <test-method signature="fill_Pratice_Form(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-02T15:03:39 IST" name="fill_Pratice_Form" data-provider="student_Form" finished-at="2023-03-02T15:03:39 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:04:47 IST" name="launchBrowser" finished-at="2023-03-14T21:04:57 IST" duration-ms="10329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fill_Pratice_Form(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:04:57 IST" name="fill_Pratice_Form" data-provider="student_Form" finished-at="2023-03-14T21:05:00 IST" duration-ms="2490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amitv232@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8080808080]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[22/01/1992]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Science]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NCR]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Noida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fill_Pratice_Form -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:00 IST" name="closedBrowser" finished-at="2023-03-14T21:05:04 IST" duration-ms="4138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:04 IST" name="launchBrowser" finished-at="2023-03-14T21:05:12 IST" duration-ms="7583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fill_Pratice_Form(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:12 IST" name="fill_Pratice_Form" data-provider="student_Form" finished-at="2023-03-14T21:05:13 IST" duration-ms="1767" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amitv232.mail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8080808080]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[27/01/1992]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Science]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NCR]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Gurgaon]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[java.lang.NullPointerException]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.129)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e52805c106b3c76997587e4f56860503, actions {actions=[org.openqa.selenium.interactions.Sequence@2519026b]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.129, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Ajay\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5419/devtool..., se:cdpVersion: 109.0.5414.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e52805c106b3c76997587e4f56860503]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.129)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e52805c106b3c76997587e4f56860503, actions {actions=[org.openqa.selenium.interactions.Sequence@2519026b]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.129, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Ajay\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5419/devtool..., se:cdpVersion: 109.0.5414.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e52805c106b3c76997587e4f56860503
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+at org.Automation_Project.demoQA.demoQA_FormPage.select_State(demoQA_FormPage.java:253)
+at org.Automation_Project.demoQA.demoQA_FormPage.fill_PraticeForm_Details(demoQA_FormPage.java:110)
+at org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form.fill_Pratice_Form(tc1_Fill_Pratice_Form.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -40,23 +205,254 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-at org.Automation_Project.demoQA_Resources.testUtil.student_TestData(testUtil.java:35)
-at org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form.student_Form(tc1_Fill_Pratice_Form.java:49)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fill_Pratice_Form -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:13 IST" name="closedBrowser" finished-at="2023-03-14T21:05:17 IST" duration-ms="4106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:17 IST" name="launchBrowser" finished-at="2023-03-14T21:05:25 IST" duration-ms="7378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fill_Pratice_Form(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:25 IST" name="fill_Pratice_Form" data-provider="student_Form" finished-at="2023-03-14T21:05:26 IST" duration-ms="894" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Akki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aki@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9090909090]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3/9/93]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Math]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Reading]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Haryana]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Haryana]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Panipat]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with value: 93
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 93
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:291)
+at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+at org.Automation_Project.demoQA.demoQA_FormPage.dobSelection(demoQA_FormPage.java:195)
+at org.Automation_Project.demoQA.demoQA_FormPage.fill_PraticeForm_Details(demoQA_FormPage.java:106)
+at org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form.fill_Pratice_Form(tc1_Fill_Pratice_Form.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-... 25 more
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fill_Pratice_Form -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:26 IST" name="closedBrowser" finished-at="2023-03-14T21:05:30 IST" duration-ms="4096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:30 IST" name="launchBrowser" finished-at="2023-03-14T21:05:38 IST" duration-ms="8253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fill_Pratice_Form(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:38 IST" name="fill_Pratice_Form" data-provider="student_Form" finished-at="2023-03-14T21:05:39 IST" duration-ms="830" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dipika]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patil]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DP@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8989900908]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8/7/90]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Math]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Music]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Haryana]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Haryana]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Panipat]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with value: 90
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 90
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:291)
+at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+at org.Automation_Project.demoQA.demoQA_FormPage.dobSelection(demoQA_FormPage.java:195)
+at org.Automation_Project.demoQA.demoQA_FormPage.fill_PraticeForm_Details(demoQA_FormPage.java:106)
+at org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form.fill_Pratice_Form(tc1_Fill_Pratice_Form.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fill_Pratice_Form -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form@55183b20]" started-at="2023-03-14T21:05:39 IST" name="closedBrowser" finished-at="2023-03-14T21:05:39 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
       </class> <!-- org.Automation_Project.demoQA_Testcases.tc1_Fill_Pratice_Form -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

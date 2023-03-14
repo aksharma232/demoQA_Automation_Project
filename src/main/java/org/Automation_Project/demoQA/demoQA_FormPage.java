@@ -4,8 +4,10 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.math3.analysis.function.Subtract;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -89,21 +91,23 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	@FindBy(id = "closeLargeModal")
 	private WebElement close_Button_AfterSubmitbmit;	
 	
-	public void fill_PraticeForm_Details(String student_FN,String student_LN, String student_EmailID,String student_Gender, String student_MobileNumber,String student_Subject, String student_Hobby, String student_Address, String student_State, String student_City) throws Throwable
+	public void fill_PraticeForm_Details(String student_FN,String student_LN, String student_EmailID,String student_Gender, String student_MobileNumber,String DOB,String student_Subject, String student_Hobby, String student_Address, String student_State, String student_City) throws Throwable
 	{
 		//openForms.click();
 		practiceForm.click();
+		//d.findElement(By.xpath("//*[@id=\"app\"]/header/a/img")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
+		//Thread.sleep(5000);
 		firstName.sendKeys(student_FN);
 		lastName.sendKeys(student_LN);
 		verified_emailId(student_EmailID);
 		genderSelection(student_Gender);		
 		studentMobile(student_MobileNumber);
 		dateOfBirthInput.click();
-		dobSelection("22","5","1992");
+		dobSelection(DOB);
 		subject(student_Subject);
 		hobbies_Selection(student_Hobby);
-		currentAddress.sendKeys(student_Address);
-		select_State(student_State);
+		currentAddress.sendKeys(student_Address);	
+		select_State(student_State);		
 		select_City(student_City);
 		submit.click();
 	}
@@ -122,7 +126,6 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	*/
 	public void verified_emailId(String email)
 	{
-		//boolean a  = student_EmailId(email);
 		String regexPattern1 =  "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$";
 		p = Pattern.compile(regexPattern1);
 	    m = p.matcher(email);	    
@@ -176,8 +179,30 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 
 //Date of Birth Selection -
 	
+	public void dobSelection(String DOB)
+	{
+		String dateParts[] = DOB.split("/");
+		String dob_day = dateParts[0];
+		String dob_month = dateParts[1];
+		String dob_year = dateParts[2];
+		
+		int student_dob_month = Integer.parseInt(dob_month);
+		
+		Select months = new Select(d.findElement(By.xpath("//*[@class=\"react-datepicker__month-select\"]")));
+		months.selectByIndex(student_dob_month);
+				
+		Select birthyear = new Select(d.findElement(By.xpath("//*[@class=\"react-datepicker__year-select\"]")));
+		birthyear.selectByValue(dob_year);
+		
+		WebElement birthdate = d.findElement(By.xpath("//div[contains(text(),'"+dob_day+"')]"));
+		birthdate.click();
+	}
+		
+/*	
 	public void dobSelection(String date,String month, String year )
 	{
+		
+		
 		Select months = new Select(d.findElement(By.xpath("//*[@class=\"react-datepicker__month-select\"]")));
 		months.selectByValue(month);
 		
@@ -187,7 +212,7 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 		WebElement birthdate = d.findElement(By.xpath("//div[contains(text(),'"+date+"')]"));
 		birthdate.click();		
 	}
-
+*/
 //Hobbies Selection -
 	
 	public void hobbies_Selection(String hobbyList)
@@ -217,14 +242,16 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	public void select_State(String student_State) throws Throwable
 	{
 		boolean e = false;
-		state.click();
-		Thread.sleep(2000);
+		actionClass().moveToElement(state).click().build().perform(); 
+		//state.click();
+		
 		for(int i =0;i< stateList.size();i++)
 			{
-				System.out.println(stateList.get(i).getText());
+				//System.out.println(stateList.get(i).getText());
 				if(stateList.get(i).getText().equalsIgnoreCase(student_State))
 					{
-						stateList.get(i).click();
+					actionClass().moveToElement(stateList.get(i)).click().build().perform();
+					//stateList.get(i).click();
 						//System.out.println(stateList.get(i).getText());
 						e = d.findElement(By.xpath("//div[@class =\" css-1uccc91-singleValue\"]")).isDisplayed(); 
 						//e = stateList.get(i).isDisplayed();
@@ -244,13 +271,16 @@ public class demoQA_FormPage extends demoQA_Comman_Utility_Pages
 	public void select_City(String student_City) throws InterruptedException
 	{
 		boolean s = false;
-		city.click();
+		actionClass().moveToElement(city).click().build().perform();
+		//city.click();
 				
 		for(int i =0; i<cityList.size();i++)
 			{
 				if(cityList.get(i).getText().equalsIgnoreCase(student_City))
 					{
-						cityList.get(i).click();
+					//Thread.sleep(2000);
+					actionClass().moveToElement(cityList.get(i)).click().build().perform();
+					//cityList.get(i).click();
 						//System.out.println(cityList.get(i).getText());
 						s = d.findElement(By.xpath("//div[@class =\" css-1uccc91-singleValue\"]")).isDisplayed();
 					}
